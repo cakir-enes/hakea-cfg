@@ -6,13 +6,21 @@
 / {
 
     behaviors {
+        
+        parens: parens {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PARENS";
+            #binding-cells = <2>;
+            tapping_term_ms = <100>;
+            binding = <&kp LPAR>, <&kp RPAR>;
+        };
 
          td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LPAR>, <&kp RPAR>, <&kp STAR>;
+            bindings = <&parens>, <&kp STAR>, <&kp STAR>;
         };
 
 
