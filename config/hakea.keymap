@@ -7,9 +7,9 @@
 
     behaviors {
         
-        ht: parens {
+        ht: holdtap {
             compatible = "zmk,behavior-hold-tap";
-            label = "PARENS";
+            label = "holdtap";
             #binding-cells = <2>;
             tapping_term_ms = <100>;
             flavor = "balanced";
@@ -30,7 +30,7 @@
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LBKT>, <&kp RBKT>, <&kp EXCL>;
+            bindings = <&ht RBKT LBKT>, <&kp EXCL>, <&kp EXCL>;
         };
 
         td2: tap_dance_2 {
@@ -38,7 +38,7 @@
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LBRC>, <&kp RBRC>, <&kp GRAVE>;
+            bindings = <&ht RBRC LBRC>, <&kp GRAVE>, <&kp GRAVE>;
         };
 
 
