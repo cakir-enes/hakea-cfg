@@ -25,7 +25,7 @@
     };
 
     behaviors {
-        braces: braces {
+        braces: both_braces {
             compatible = "zmk,behavior-hold-tap";
             label = "BRACES";
             #binding-cells = <2>;
@@ -33,7 +33,7 @@
             bindings = <&kp LBRACKET>, <&kp RBRACKET>;
         };
         td0: tap_dance0 {
-            compatible = "zmk,behaviour-tap-dance";
+            compatible = "zmk,behavior-tap-dance";
             label = "TD0";
             #binding-cells = <1>;
             bindings = <&braces>, <&kp STAR>, <&kp PIPE>;
