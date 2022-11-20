@@ -6,13 +6,13 @@
 / {
 
     behaviors {
-        td0: tap_dance0 {
+         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
+            label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            bindings = <&kp LBRACE>, <&kp STAR>, <&kp PIPE>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
-
     };
 
     combos {
