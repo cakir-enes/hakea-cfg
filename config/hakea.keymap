@@ -12,7 +12,7 @@
             label = "PARENS";
             #binding-cells = <2>;
             tapping_term_ms = <100>;
-            binding = <&kp LPAR>, <&kp RPAR>;
+            bindings = <&kp LPAR>, <&kp RPAR>;
         };
 
          td0: tap_dance_0 {
