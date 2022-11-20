@@ -7,13 +7,13 @@
 
     behaviors {
         
-        parens: parens {
+        ht: parens {
             compatible = "zmk,behavior-hold-tap";
             label = "PARENS";
             #binding-cells = <2>;
             tapping_term_ms = <100>;
             flavor = "balanced";
-            bindings = <&kp LPAR>, <&kp RPAR>;
+            bindings = <&kp>, <&kp>;
         };
 
          td0: tap_dance_0 {
@@ -21,7 +21,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp STAR>, <&kp STAR>, <&kp STAR>;
+            bindings = <&ht PPAR LPAR>, <&kp STAR>, <&kp STAR>;
         };
 
 
