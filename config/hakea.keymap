@@ -6,13 +6,33 @@
 / {
 
     behaviors {
+
          td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+            bindings = <&kp LPAR>, <&kp RPAR>, <&kp STAR>;
         };
+
+
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <1>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBKT>, <&kp RBKT>, <&kp EXCL>;
+        };
+
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBRC>, <&kp RBRC>, <&kp GRAVE>;
+        };
+
+
     };
 
     combos {
@@ -88,7 +108,7 @@
             bindings = <
 &out OUT_BLE &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans         &trans   &trans        &trans  &bt BT_CLR
 &kp LC(LALT) &kp LEFT      &bt BT_SEL 1 &kp K_CMENU  &trans       &trans                   &kp PG_UP &kp LA(LEFT)   &kp UP   &kp LA(RIGHT) &kp N0  &trans
-&kp LC(LALT) &kp RIGHT     &kp LCTRL    &kp LSHFT    &trans       &trans                   &kp PG_DN &kp LEFT       &kp DOWN &kp UP     &kp RIGHT &kp BSPC
+&kp LC(LALT) &kp RIGHT     &kp LCTRL    &kp LSHFT    &trans       &trans                   &kp PG_DN &td0           &td1     &td2     &kp RIGHT &kp BSPC
 &out OUT_TOG &kp K_UNDO    &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans         &trans   &trans        &trans  &trans
                            &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans         &trans   &trans
             >;
