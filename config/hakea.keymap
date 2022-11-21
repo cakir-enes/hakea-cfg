@@ -68,9 +68,15 @@
         };
 
         prev_tab {
-            bindings = <&kp LC(LS(TAB))>;
+            bindings = <&kp LC(TAB)>;
             key-positions = <44 45>;
         };
+
+        prev_tab_t {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <42 46>;
+        };
+
 
     };
 
