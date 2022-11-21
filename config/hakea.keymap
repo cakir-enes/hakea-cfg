@@ -40,12 +40,15 @@
             tapping-term-ms = <200>;
             bindings = <&ht RBRC LBRC>, <&kp GRAVE>, <&kp GRAVE>;
         };
-
-
     };
 
     combos {
         compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <31 32>;
+        };
 
         enter {
             bindings = <&kp LC(TAB)>;
@@ -76,6 +79,7 @@
             bindings = <&kp LC(TAB)>;
             key-positions = <42 46>;
         };
+            
 
 
     };
