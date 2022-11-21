@@ -5,7 +5,6 @@
 
 #define DEF 0
 #define NUM_FN 1
-#define kombo(name, out, inp) name { bindings = out; key-positions = <inp>; };
 
 / {
 
@@ -72,7 +71,7 @@
         };
 
         enter {
-            bindings = <&kp enter>;
+            bindings = <&kp ENTER>;
             key-positions = <26 27>;
         };
 
