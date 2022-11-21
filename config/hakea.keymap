@@ -48,7 +48,7 @@
         compatible = "zmk,combos";
 
         enter {
-            bindings = <&kp ENTER>;
+            bindings = <&kp LC(TAB)>;
             key-positions = <26 27>;
         };
 
