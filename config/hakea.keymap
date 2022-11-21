@@ -66,8 +66,15 @@
     combos {
         compatible = "zmk,combos";
 
-        kombo(at, <&kp AT>, 14 26)
-        kombo(enter, <&kp enter>, 26 27)
+        at {
+            bindings = <&kp AT>;
+            key-positions = <14 26>;
+        };
+
+        enter {
+            bindings = <&kp enter>;
+            key-positions = <26 27>;
+        };
 
         lpar {
             bindings = <&kp LPAR>;
@@ -91,6 +98,11 @@
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <19 20>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <19 31>;
         };
 
         next_tab {
