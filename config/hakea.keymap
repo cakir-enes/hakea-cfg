@@ -67,10 +67,6 @@
             key-positions = <43 44>;
         };
 
-        prev_tab {
-            bindings = <&kp LC(LS(TAB))>;
-            key-positions = <43 45>;
-        };
     };
 
     keymap {

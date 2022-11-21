@@ -14,7 +14,6 @@
         { "label": "9", "row": 0, "col": 9, "x": 12, "y": 0.31 },
         { "label": "0", "row": 0, "col": 10, "x": 13, "y": 0.93 },
         { "label": "BSPC", "row": 0, "col": 11, "x": 14, "y": 0.93 },
-      
         { "label": "Tab", "row": 1, "col": 0, "x": 0, "y": 1.93 },
         { "label": "Q", "row": 1, "col": 1, "x": 1, "y": 1.93 },
         { "label": "W", "row": 1, "col": 2, "x": 2, "y": 1.31 },
@@ -27,7 +26,6 @@
         { "label": "O", "row": 1, "col": 9, "x": 12, "y": 1.31 },
         { "label": "P", "row": 1, "col": 10, "x": 13, "y": 1.93 },
         { "label": "\\", "row": 1, "col": 11, "x": 14, "y": 1.93 },
-      
         { "label": "Meta", "row": 2, "col": 0, "x": 0, "y": 2.93 },
         { "label": "A", "row": 2, "col": 1, "x": 1, "y": 2.93 },
         { "label": "S", "row": 2, "col": 2, "x": 2, "y": 2.31 },
@@ -40,7 +38,6 @@
         { "label": "L", "row": 2, "col": 9, "x": 12, "y": 2.31 },
         { "label": ";", "row": 2, "col": 10, "x": 13, "y": 2.93 },
         { "label": "'", "row": 2, "col": 11, "x": 14, "y": 2.93 },
-      
         { "label": "LShift", "row": 3, "col": 0, "x": 0, "y": 3.93 },
         { "label": "Z", "row": 3, "col": 1, "x": 1, "y": 3.93 },
         { "label": "X", "row": 3, "col": 2, "x": 2, "y": 3.31 },
@@ -53,7 +50,6 @@
         { "label": ".", "row": 3, "col": 9, "x": 12, "y": 3.31 },
         { "label": "/", "row": 3, "col": 10, "x": 13, "y": 3.93 },
         { "label": "RShift", "row": 3, "col": 11, "x": 14, "y": 3.93 },
-      
         { "label": "Ctrl", "row": 4, "col": 3, "x": 4, "y": 4.31 },
         { "label": "LSpace", "row": 4, "col": 4, "x": 5, "y": 4.42},
         { "label": "Raise", "row": 4, "col": 5, "x": 6, "y": 4.42},
