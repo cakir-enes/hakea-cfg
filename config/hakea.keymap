@@ -66,12 +66,12 @@
         };
 
         next_tab {
-            bindings = <&kp A>;
+            bindings = <&kp LC(LS(TAB))>;
             key-positions = <45 46>;
         };
 
         prev_tab {
-            bindings = <&kp B>;
+            bindings = <&kp LC(TAB)>;
             key-positions = <45 47>;
         };
     };
@@ -93,7 +93,7 @@
 
 &kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                       &kp Y  &kp U     &kp I     &kp O    &kp P    &kp LG(TAB)
 
- &gresc   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
+ &ht &gresc ESC   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
 
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE  &kp LC(D)    &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 
