@@ -77,10 +77,22 @@
 
         prev_tab_t {
             bindings = <&kp LC(TAB)>;
-            key-positions = <42 46>;
+            key-positions = <42 41>;
+        };
+         prev_tab_t2 {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <44 45>;
         };
             
-
+prev_tab_t3 {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <45 46>;
+        };
+ prev_tab_t4 {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <46 47>;
+        };
+          
 
     };
 
