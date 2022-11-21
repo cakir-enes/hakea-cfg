@@ -66,33 +66,36 @@
         };
 
         next_tab {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp A>;
             key-positions = <42 43>;
         };
 
         prev_tab {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp B>;
             key-positions = <44 45>;
         };
 
         prev_tab_t {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp C>;
             key-positions = <42 41>;
         };
          prev_tab_t2 {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp D>;
             key-positions = <44 45>;
         };
             
 prev_tab_t3 {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp E>;
             key-positions = <45 46>;
         };
  prev_tab_t4 {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp F>;
             key-positions = <46 47>;
         };
-          
+  prev_tab_t4 {
+            bindings = <&kp G>;
+            key-positions = <43 45>;
+        };         
 
     };
 
