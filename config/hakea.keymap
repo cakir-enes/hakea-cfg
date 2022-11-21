@@ -5,7 +5,7 @@
 
 #define DEF 0
 #define NUM_FN 1
-#define kombo(name, out, inp) name { bindings = out; key-positions = <inp> };
+#define kombo(name, out, inp) name { bindings = out; key-positions = <inp> }
 
 / {
 
@@ -66,8 +66,8 @@
     combos {
         compatible = "zmk,combos";
 
-        kombo(at, <&kp AT>, 14 26)
-        kombo(enter, <&kp enter>, 26 27)
+        kombo(at, <&kp AT>, 14 26);
+        kombo(enter, <&kp enter>, 26 27);
 
         lpar {
             bindings = <&kp LPAR>;
