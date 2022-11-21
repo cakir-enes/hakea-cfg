@@ -5,6 +5,12 @@
 
 #define DEF 0
 #define NUM_FN 1
+#define combo(name, keypress, keypos) \
+combo_##name {                        \
+	timeout-ms = <30>;                \
+	bindings = <keypress>;            \
+	key-positions = <keypos>;         \
+};
 
 / {
 
@@ -65,10 +71,7 @@
     combos {
         compatible = "zmk,combos";
 
-        at {
-            bindings = <&kp AT>;
-            key-positions = <14 26>;
-        };
+        kombo(at, &kp AT, 14 26)
 
         enter {
             bindings = <&kp ENTER>;
