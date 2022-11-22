@@ -72,20 +72,41 @@ combo_##name {                        \
         compatible = "zmk,combos";
 
         KOMBO(at, &kp AT, 14 26)
+
         KOMBO(enter, &kp ENTER, 26 27)
+
         KOMBO(lpar, &kp LPAR, 31 32)
+
         KOMBO(rpar, &kp RPAR, 31 45)
+
         KOMBO(lbkt, &kp LBKT, 32 33)
+
         KOMBO(rbkt, &kp RBKT, 32 46)
+
         KOMBO(lbrc, &kp LBRC, 31 33)
+
         KOMBO(rbrc, &kp RBRC, 45 47)
+
         KOMBO(colon, &kp COLON, 45 32)
+
         KOMBO(equal, &kp EQUAL, 31 20)
+
         KOMBO(star, &kp STAR, 31 19)
+
         KOMBO(underscore, &kp UNDERSCORE, 19 20)
-        KOMBO(minus, &kp MINUS, 19 31)
-        KOMBO(next_tab, &kp LC(TAB), 27 28)
-        KOMBO(prev_tab, &kp LC(LS(TAB)), 26 27)
+
+        KOMBO(next_tab, &kp LC(TAB), 38 39)
+
+        KOMBO(prev_tab, &kp LC(LS(TAB)), 39 40)
+
+        KOMBO(percent, &kp PERCENT, 45 46)
+
+        KOMBO(minus, &kp MINUS, 46 47)
+
+        KOMBO(plus, &kp PLUS, 45 47)
+
+        KOMBO(caret, &kp CARET, 18 30)
+
     };
 
     keymap {
@@ -105,11 +126,11 @@ combo_##name {                        \
 
 &kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                       &kp Y  &kp U     &kp I     &kp O    &kp P    &kp LG(TAB)
 
-&ht LCTRL ESC   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
+&mt LCTRL ESC   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
 
 &ht LSHFT GRAVE &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE  &kp LC(D)    &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 
-                 &kp LGUI &kp LALT &kp LGUI &kp LGUI  &lt 1 SPACE   &kp RET  &mo 2  &kp RCTRL &kp RALT  &kp RGUI
+                 &kp LGUI &kp LALT &kp LGUI &mt LSHFT SPACE  &lt 1 SPACE   &lt 1 RET  &mo 2  &kp RCTRL &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -127,7 +148,7 @@ combo_##name {                        \
             bindings = <
 &kp TILDE &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
 &kp GRAVE &kp N1    &kp N2    &kp N3      &kp N4    &kp N5                    &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp F12
-&trans    &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT                 &kp CARET &td0     &kp DOWN        &kp UP    &kp RIGHT &kp PIPE
+&trans    &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT                 &kp LEFT &kp DOWN    &kp UP        &kp RIGHT &kp RIGHT &kp PIPE
 &trans    &kp EQUAL &kp MINUS &kp KP_PLUS &kp LBRC  &kp RBRC  &trans   &trans &kp LBKT  &kp RBKT &kp SEMI        &kp COLON &kp BSLH  &trans
                     &trans    &trans      &trans    &trans    &trans   &trans &trans    &trans   &trans          &trans
             >;
