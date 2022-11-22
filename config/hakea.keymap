@@ -72,50 +72,20 @@ combo_##name {                        \
         compatible = "zmk,combos";
 
         KOMBO(at, &kp AT, 14 26)
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <26 27>;
-        };
-
-        lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <31 32>;
-        };
-
-        lbkt {
-            bindings = <&kp LBKT>;
-            key-positions = <32 33>;
-        };
-
-        lbkt {
-            bindings = <&kp LBRC>;
-            key-positions = <31 33>;
-        };
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <31 20>;
-        };
-
-        underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <19 20>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <19 31>;
-        };
-
-        next_tab {
-            bindings = <&kp LC(LS(TAB))>;
-            key-positions = <45 46>;
-        };
-
-        prev_tab {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <45 47>;
-        };
+        KOMBO(enter, &kp ENTER, 26 27)
+        KOMBO(lpar, &kp LPAR, 31 32)
+        KOMBO(rpar, &kp RPAR, 31 45)
+        KOMBO(lbkt, &kp LBKT, 32 33)
+        KOMBO(rbkt, &kp RBKT, 32 46)
+        KOMBO(lbrc, &kp LBRC, 31 33)
+        KOMBO(rbrc, &kp RBRC, 45 47)
+        KOMBO(colon, &kp COLON, 45 32)
+        KOMBO(equal, &kp EQUAL, 31 20)
+        KOMBO(star, &kp STAR, 31 19)
+        KOMBO(underscore, &kp UNDERSCORE, 19 20)
+        KOMBO(minus, &kp MINUS, 19 31)
+        KOMBO(next_tab, &kp LC(TAB), 27 28)
+        KOMBO(prev_tab, &kp LC(LS(TAB)), 26 27)
     };
 
     keymap {
