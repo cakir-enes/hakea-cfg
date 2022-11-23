@@ -25,16 +25,7 @@ combo_##name {                        \
             bindings = <&kp>, <&kp>;
         };
 
-        ht_p: holdtap_p {
-						compatible = "zmk,behavior-hold-tap";
-						label = "holdtap_p";
-						#binding-cells = <2>;
-						tapping_term_ms = <200>;
-						flavor = "hold-preferred";
-						bindings = <&kp>, <&kp>;
-				};
-
-         grescx: grave_escapex {
+  			grescx: grave_escapex {
              compatible = "zmk,behavior-mod-morph";
              label = "GRAVE_ESCAPEX";
              #binding-cells = <0>;
@@ -42,7 +33,17 @@ combo_##name {                        \
              mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
          };
 
-        // fp: fancy_pinky {
+
+        ht_p: holdtap_p {
+						compatible = "zmk,behavior-hold-tap";
+						label = "holdtap_p";
+						#binding-cells = <2>;
+						tapping_term_ms = <200>;
+						flavor = "hold-preferred";
+						bindings = <&kp>, <&grescx>;
+				};
+
+              // fp: fancy_pinky {
         //     compatible = "zmk,behavior-hold-tap";
         //     label = "fancy_pinky";
         //     #binding-cells = <2>;
@@ -136,7 +137,7 @@ combo_##name {                        \
 
 &kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                       &kp Y  &kp U     &kp I     &kp O    &kp P    &kp LG(TAB)
 
-&ht_p LCTRL &grescx   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
+&ht_p LCTRL 0   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
 
 &ht LSHFT GRAVE &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE  &kp LC(D)    &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 
