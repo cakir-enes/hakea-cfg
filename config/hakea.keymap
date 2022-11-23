@@ -25,13 +25,23 @@ combo_##name {                        \
             bindings = <&kp>, <&kp>;
         };
 
-        // grescx: grave_escape {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "GRAVE_ESCAPEX";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp ESC>, <&kp GRAVE>;
-        //     mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-        // };
+        ht_p: holdtap_p {
+						compatible = "zmk,behavior-hold-tap";
+						label = "holdtap_p";
+						#binding-cells = <2>;
+						tapping_term_ms = <200>;
+						flavor = "hold-preferred";
+						bindings = <&kp>, <&kp>;
+				};
+
+         grescx: grave_escapex {
+             compatible = "zmk,behavior-mod-morph";
+             label = "GRAVE_ESCAPEX";
+             #binding-cells = <0>;
+             bindings = <&kp ESC>, <&kp GRAVE>;
+             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+             keep-mods = <(MOD_LGUI)>;
+         };
 
         // fp: fancy_pinky {
         //     compatible = "zmk,behavior-hold-tap";
@@ -66,6 +76,7 @@ combo_##name {                        \
             tapping-term-ms = <200>;
             bindings = <&ht RBRC LBRC>, <&kp GRAVE>, <&kp GRAVE>;
         };
+
     };
 
     combos {
@@ -95,9 +106,9 @@ combo_##name {                        \
 
         KOMBO(underscore, &kp UNDERSCORE, 19 20)
 
-        KOMBO(next_tab, &kp LC(TAB), 38 39)
+        KOMBO(next_tab, &kp LC(TAB), 39 40)
 
-        KOMBO(prev_tab, &kp LC(LS(TAB)), 39 40)
+        KOMBO(prev_tab, &kp LC(LS(TAB)), 38 39)
 
         KOMBO(percent, &kp PERCENT, 45 46)
 
@@ -126,7 +137,7 @@ combo_##name {                        \
 
 &kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                       &kp Y  &kp U     &kp I     &kp O    &kp P    &kp LG(TAB)
 
-&mt LCTRL ESC   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
+&ht_p LCTRL &grescx   &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
 
 &ht LSHFT GRAVE &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE  &kp LC(D)    &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 
