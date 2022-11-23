@@ -14,7 +14,7 @@ combo_##name {                        \
 #define MEH(key) LC(LA(LS(key)))
 
 &mt {
-	tapping-term-ms = <150>;
+	tapping-term-ms = <262>;
 };
 
 / {
@@ -54,7 +54,7 @@ combo_##name {                        \
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&ht LS(F14) LS(F13)>, <&kp LS(15)>, <&kp STAR>;
+            bindings = <&ht LS(F14) LS(F13)>, <&kp LS(F15)>, <&kp STAR>;
         };
 
 
