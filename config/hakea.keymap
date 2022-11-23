@@ -14,7 +14,7 @@ combo_##name {                        \
 #define MEH(key) LC(LA(LS(key)))
 
 &mt {
-	tapping-term-ms = <100>;
+	tapping-term-ms = <150>;
 };
 
 / {
@@ -54,7 +54,7 @@ combo_##name {                        \
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&ht F14 F13>, <&kp 15>, <&kp STAR>;
+            bindings = <&ht LS(F14) LS(F13)>, <&kp LS(15)>, <&kp STAR>;
         };
 
 
@@ -157,7 +157,7 @@ combo_##name {                        \
 &kp TILDE &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                        		   &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
 &kp GRAVE &kp MEH(Q)    &kp MEH(W)    &kp MEH(E)      &kp MEH(R)    &kp MEH(T)           &kp EXCL  &kp AMPS    &kp PIPE          &kp N9    &kp N0    &kp F12
 &trans    &kp MEH(A)  &kp MEH(S)    &kp MEH(D)    &kp MEH(F)  &kp MEH(G)                 &kp LEFT  &kp DOWN    &kp UP        &kp RIGHT &kp LA(BSPC) &kp PIPE
-&trans    &kp EQUAL &kp MINUS &kp KP_PLUS &kp LBRC  &kp RBRC  &trans   &kp MEH(B)            &kp HOME  &kp LA(LEFT) &kp LA(RIGHT)   &kp END &kp BSLH  &trans
+&trans    &kp EQUAL      &kp MINUS      &kp PLUS    &kp LBRC  &kp MEH(B)  &trans   &kp MEH(B)            &kp HOME  &kp LA(LEFT) &kp LA(RIGHT)   &kp END &kp BSLH  &trans
                     &trans    &trans      &kp MEH(N1)    &kp MEH(N2)    &kp MEH(N3)   &trans &trans    &trans   &trans          &trans
             >;
 
