@@ -130,11 +130,11 @@ combo_##name {                        \
 
 &kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                       							    &kp Y  &kp U     &kp I     &kp O    &kp P    &kp LG(TAB)
 
-&ht_p LCTRL 0   &kp A  &kp S    &kp D    &kp F     &kp G                       	      		&kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
+&ht_p LGUI 0   &kp A  &kp S    &kp D    &kp F     &kp G                       	      		&kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
 
 &ht LSHFT GRAVE &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE          &kp LC(D)   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 
-                 &kp LGUI &kp LALT &kp LALT &mt LSHFT SPACE  &mt LGUI &caps_word   &lt 2 RET   &lt 1 RET   &kp RCTRL &kp RALT  &kp RGUI
+                 &caps_word &kp LALT &kp LGUI &mt LSHFT SPACE  &mt LCTRL ESC   &lt 2 RET   &lt 1 RET   &kp RCTRL &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
