@@ -32,7 +32,7 @@ combo_##name {                        \
              #binding-cells = <0>;
              bindings = <&kp ESC>, <&kp GRAVE>;
              keep-mods = <(MOD_LGUI)>;
-             mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTRL)>;
+             mods = <(MOD_LGUI|MOD_LSFT)>;
          };
 
 
