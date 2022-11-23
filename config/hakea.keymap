@@ -30,7 +30,8 @@ combo_##name {                        \
              label = "GRAVE_ESCAPEX";
              #binding-cells = <0>;
              bindings = <&kp ESC>, <&kp GRAVE>;
-             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+             keep-mods = <(MOD_LGUI)>;
+             mods = <(MOD_LGUI|MOD_LSFT)>;
          };
 
 
