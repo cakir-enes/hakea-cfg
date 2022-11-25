@@ -14,7 +14,7 @@ combo_##name {                        \
 #define MEH(key) LC(LA(LS(key)))
 
 &mt {
-	tapping-term-ms = <262>;
+	tapping-term-ms = <200>;
 };
 
 / {
@@ -49,12 +49,21 @@ combo_##name {                        \
 						bindings = <&kp>, <&grescx>;
 				};
 
+				ht_t: holdtap_t {
+						compatible = "zmk,behavior-hold-tap";
+						label = "holdtap_t";
+						#binding-cells = <2>;
+						tapping_term_ms = <200>;
+						flavor = "tap-preferred";
+						bindings = <&kp>, <&grescx>;
+				};
+
          td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&ht LS(F14) LS(F13)>, <&kp LS(F15)>, <&kp STAR>;
+            bindings = <&ht LS(F14) LS(F13)>, <&kp LS(15)>, <&kp STAR>;
         };
 
 
@@ -114,6 +123,26 @@ combo_##name {                        \
         KOMBO(plus, &kp PLUS, 45 47)
 
         KOMBO(caret, &kp CARET, 18 30)
+
+				KOMBO(excl, &kp EXCL, 14 15)
+
+				KOMBO(amps, &kp AMPS, 16 15)
+
+				KOMBO(pipe, &kp PIPE, 16 14)
+
+				KOMBO(hash, &kp HASH, 15 27)
+
+				KOMBO(grave, &kp GRAVE, 16 28)
+
+				KOMBO(esc, &kp ESC, 28 27)
+
+				KOMBO(bslh, &kp BSLH, 26 28)
+
+				KOMBO(dollar, &kp DOLLAR, 17 29)
+
+				KOMBO(plus, &kp PLUS, 29 28)
+
+				KOMBO(minus, &kp MINUS, 40 27)
 
     };
 
