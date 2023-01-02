@@ -15,6 +15,7 @@ combo_##name {                        \
 	key-positions = <keypos>;         \
 };
 #define MEH(key) LC(LA(LS(key)))
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 &mt {
 	tapping-term-ms = <200>;
@@ -23,6 +24,16 @@ combo_##name {                        \
 / {
 
     behaviors {
+
+        as: auto_shift {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "AUTO_SHIFT";
+                    #binding-cells = <2>;
+                    tapping_term_ms = <135>;
+                    quick_tap_ms = <0>;
+                    flavor = "tap-preferred";
+                    bindings = <&kp>, <&kp>;
+                };
 
         ht: holdtap {
             compatible = "zmk,behavior-hold-tap";
@@ -145,9 +156,9 @@ KOMBO(minus, &kp MINUS, 40 27)
 
 KOMBO(tilde, &kp TILDE, 28 15)
 
-KOMBO(percento, &kp PERC, 45 46)
+KOMBO(percento, &kp PERCENT, 45 46)
 
-KOMBO(semicolono, &kp SEMICOL, 46 47)
+KOMBO(semicolono, &kp SEMI, 46 47)
 
     };
 
@@ -166,11 +177,11 @@ KOMBO(semicolono, &kp SEMICOL, 46 47)
 
 &kp LS(F1)   &kp LS(F2) &kp LS(F3)   &kp LS(F4)   &kp LS(F5)    &kp LS(F6)                &kp LS(F7)    &kp LS(F8)    &kp LS(F9)   &kp LS(F10)  &kp LS(F11) &kp LS(F12)
 
-&kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                       							    &kp Y  &kp U     &kp I     &kp O    &kp P    &kp LG(TAB)
+&kp AS(TAB)   &kp AS(Q)  &kp AS(W)    &kp AS(E)    &kp AS(R)     &kp AS(T)                       							    &kp AS(Y)  &kp AS(U)     &kp AS(I)     &kp AS(O)    &kp AS(P)    &kp LG(TAB)
 
-&ht LCTRL ESC   &kp A  &kp S    &kp D    &kp F     &kp G                       	      		&kp H  &kp J     &kp K     &kp L    &kp BSPC &kp SQT
+&ht LCTRL ESC   &kp AS(A)  &kp AS(S)    &kp AS(D)    &kp AS(F)     &kp AS(G)                       	      		&kp AS(H)  &kp AS(J)     &kp AS(K)     &kp AS(L)    &kp BSPC &kp AS(SQT)
 
-&ht LSHFT GRAVE &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE          &td0        &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+&ht LSHFT GRAVE &kp AS(Z)  &kp AS(X)    &kp AS(C)    &kp AS(V)     &kp AS(B)  &kp C_MUTE          &td0        &kp AS(N)  &kp AS(M)     &kp AS(COMMA) &kp AS(DOT)  &kp AS(FSLH) &kp RSHFT
 
                  &caps_word &kp LALT &kp LGUI &lt 1 SPACE  &mt LCTRL SPACE   &lt 2 RET    &lt 1 RET   &kp RCTRL &kp RALT  &kp RGUI
             >;
