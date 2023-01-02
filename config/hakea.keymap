@@ -115,9 +115,9 @@ combo_##name {                        \
 
     KOMBO(underscore, &kp UNDERSCORE, 19 20)
 
-    KOMBO(nexttab, &kp LC(TAB), 39 40)
+    KOMBO(next_tab, &kp LC(TAB), 39 40)
 
-    KOMBO(prevtab, &kp LC(LS(TAB)), 38 39)
+    KOMBO(prev_tab, &kp LC(LS(TAB)), 38 39)
 
     KOMBO(plus, &kp PLUS, 29 28)
 
