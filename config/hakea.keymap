@@ -121,6 +121,31 @@ KOMBO(next_tab, &kp LC(TAB), 39 40)
 
 KOMBO(prev_tab, &kp LC(LS(TAB)), 38 39)
 
+KOMBO(plus, &kp PLUS, 29 28)
+
+KOMBO(caret, &kp CARET, 18 30)
+
+KOMBO(excl, &kp EXCL, 14 15)
+
+KOMBO(amps, &kp AMPS, 16 15)
+
+KOMBO(pipe, &kp PIPE, 16 14)
+
+KOMBO(hash, &kp HASH, 15 27)
+
+KOMBO(grave, &kp GRAVE, 16 28)
+
+KOMBO(esc, &kp ESC, 28 27)
+
+KOMBO(bslh, &kp BSLH, 26 28)
+
+KOMBO(dollar, &kp DOLLAR, 17 29)
+
+KOMBO(minus, &kp MINUS, 40 27)
+
+KOMBO(tilde, &kp TILDE, 28 15)
+
+
     };
 
     keymap {
