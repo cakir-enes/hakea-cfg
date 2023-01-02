@@ -95,51 +95,6 @@ combo_##name {                        \
 
 KOMBO(at, &kp AT, 14 26)
 
-KOMBO(enter, &kp ENTER, 26 27)
-
-KOMBO(lpar, &kp LPAR, 31 32)
-
-KOMBO(rpar, &kp RPAR, 31 45)
-
-KOMBO(lbkt, &kp LBKT, 32 33)
-
-KOMBO(rbkt, &kp RBKT, 32 46)
-
-KOMBO(lbrc, &kp LBRC, 31 33)
-
-KOMBO(rbrc, &kp RBRC, 45 47)
-
-KOMBO(colon, &kp COLON, 45 32)
-
-KOMBO(equal, &kp EQUAL, 31 20)
-
-KOMBO(star, &kp STAR, 19 31)
-
-KOMBO(underscore, &kp UNDERSCORE, 19 20)
-
-
-KOMBO(plus, &kp PLUS, 29 28)
-
-KOMBO(caret, &kp CARET, 18 30)
-
-KOMBO(excl, &kp EXCL, 14 15)
-
-KOMBO(amps, &kp AMPS, 16 15)
-
-KOMBO(pipe, &kp PIPE, 16 14)
-
-KOMBO(hash, &kp HASH, 15 27)
-
-KOMBO(grave, &kp GRAVE, 16 28)
-
-KOMBO(esc, &kp ESC, 28 27)
-
-KOMBO(bslh, &kp BSLH, 26 28)
-
-KOMBO(dollar, &kp DOLLAR, 17 29)
-
-KOMBO(minus, &kp MINUS, 40 27)
-
 KOMBO(tilde, &kp TILDE, 28 15)
 
 
