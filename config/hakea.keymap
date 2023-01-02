@@ -177,11 +177,11 @@ KOMBO(semicolono, &kp SEMI, 46 47)
 
 &kp LS(F1)   &kp LS(F2) &kp LS(F3)   &kp LS(F4)   &kp LS(F5)    &kp LS(F6)            &kp LS(F7) &kp LS(F8)    &kp LS(F9)   &kp LS(F10)   &kp LS(F11) &kp LS(F12)
 
-AS(TAB)   AS(Q)  AS(W)    AS(E)    AS(R)     AS(T)                       				      AS(Y)  AS(U)     AS(I)    AS(O)     AS(P)   LG(TAB)
+AS(TAB)   AS(Q)  AS(W)    AS(E)    AS(R)     AS(T)                       				      AS(Y)  AS(U)     AS(I)    AS(O)     AS(P)   &kp LG(TAB)
 
 &ht LCTRL ESC   AS(A)  AS(S)    AS(D)    AS(F)     AS(G)                       	      AS(H)  AS(J)     AS(K)    AS(L)     &kp BSPC    AS(SQT)
 
-&ht LSHFT GRAVE AS(Z)  AS(X)    AS(C)    AS(V)     AS(B)     &kp C_MUTE   &td0        &kp N  AS(M)     AS(COMMA) AS(DOT)  AS(FSLH) &kp RSHFT
+&ht LSHFT GRAVE AS(Z)  AS(X)    AS(C)    AS(V)     AS(B)     &kp C_MUTE   &td0        AS(N)  AS(M)     AS(COMMA) AS(DOT)  AS(FSLH) &kp RSHFT
 
                  &caps_word &kp LALT &kp LGUI &lt 1 SPACE  &mt LCTRL SPACE       &lt 2 RET    &lt 1 RET   &kp RCTRL &kp RALT  &kp RGUI
             >;
