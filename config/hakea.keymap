@@ -117,9 +117,6 @@ KOMBO(star, &kp STAR, 19 31)
 
 KOMBO(underscore, &kp UNDERSCORE, 19 20)
 
-# KOMBO(next_tab, &kp LC(TAB), 39 40)
-
-# KOMBO(prev_tab, &kp LC(LS(TAB)), 38 39)
 
 KOMBO(plus, &kp PLUS, 29 28)
 
