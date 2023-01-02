@@ -91,6 +91,10 @@ combo_##name {                        \
     combos {
         compatible = "zmk,combos";
 
+KOMBO(excl, &kp EXCL, 14 15)
+
+				KOMBO(amps, &kp AMPS, 16 15)
+
 
     };
 
