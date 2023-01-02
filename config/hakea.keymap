@@ -142,9 +142,6 @@ KOMBO(minus, &kp MINUS, 40 27)
 
 KOMBO(tilde, &kp TILDE, 28 15)
 
-KOMBO(perc, &kp PERC, 45 46)
-
-KOMBO(semicol, &kp SEMICOL, 46 47)
 
     };
 
