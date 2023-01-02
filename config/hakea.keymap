@@ -91,6 +91,8 @@ combo_##name {                        \
     combos {
         compatible = "zmk,combos";
 
+
+
 KOMBO(at, &kp AT, 14 26)
 
 KOMBO(enter, &kp ENTER, 26 27)
@@ -112,6 +114,12 @@ KOMBO(colon, &kp COLON, 45 32)
 KOMBO(equal, &kp EQUAL, 31 20)
 
 KOMBO(star, &kp STAR, 19 31)
+
+KOMBO(underscore, &kp UNDERSCORE, 19 20)
+
+KOMBO(next_tab, &kp LC(TAB), 39 40)
+
+KOMBO(prev_tab, &kp LC(LS(TAB)), 38 39)
 
     };
 
