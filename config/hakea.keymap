@@ -219,7 +219,7 @@ AS(TAB)   AS(Q)  AS(W)    AS(E)    AS(R)     AS(T)                       				   
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &out OUT_BLE &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &trans     &trans     &trans    &trans    &trans      &bt BT_CLR
-&kp LC(LALT) &kp LEFT      &kp KP_N7    &kp KP_N8    &kp KP_N9       &kp PLUS                          &kp F12    &kp F7     &kp F8    &kp F9    &kp N0      &trans
+&kp LC(LALT) &kp LEFT      &kp KP_N7    &kp KP_N8    &kp KP_N9       &kp PLUS                          &kp F12    &kp F7     &kp F8    &kp F9    &kp N0      &ext_power EP_TOGGLE
 &kp LC(LALT) &kp RIGHT     &kp KP_N4    &kp KP_N5    &kp KP_N6       &kp MINUS                         &kp F11    &kp F4     &kp F5    &kp F6    &kp SEMI    &ext_power EP_ON
 &out OUT_TOG &kp K_UNDO    &kp KP_N1    &kp KP_N2    &kp KP_N3       &kp KP_N0        &trans   &trans     &kp F10    &kp F1     &kp F2    &kp F3    &kp AT      &ext_power EP_OFF
                            &trans    &trans    &trans       &trans        &trans   &trans     &trans     &trans     &trans    &trans
