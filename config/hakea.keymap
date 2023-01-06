@@ -186,7 +186,7 @@ KOMBO(semicolono, &kp SEMI, 46 47)
 
 AS(TAB)   &kp Q  AS(W)    AS(E)    AS(R)     AS(T)                       				      AS(Y)  AS(U)     AS(I)    AS(O)     AS(P)   &kp LG(TAB)
 
-&ht MEH ESC   AS(A)  AS(S)    AS(D)    AS(F)     AS(G)                       	      AS(H)  AS(J)     AS(K)    AS(L)     &kp BSPC    AS(SQT)
+&ht LA(LG(LSHIFT)) ESC   AS(A)  AS(S)    AS(D)    AS(F)     AS(G)                       	      AS(H)  AS(J)     AS(K)    AS(L)     &kp BSPC    AS(SQT)
 
 &ht LSHFT GRAVE AS(Z)  AS(X)    AS(C)    AS(V)     AS(B)     &kp C_MUTE   &td0        AS(N)  AS(M)     AS(COMMA) AS(DOT)  AS(FSLH) &kp RSHFT
 
