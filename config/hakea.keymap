@@ -25,6 +25,13 @@ combo_##name {                        \
 
     behaviors {
 
+      meh: meh {
+			compatible = "zmk,modified-key-press";
+			label = "MEH";
+			#binding-cells = <1>;
+			modifiers = MOD_LGUI | MOD_LSFT | MOD_LCTL;
+		}; 
+
         as: auto_shift {
                     compatible = "zmk,behavior-hold-tap";
                     label = "AUTO_SHIFT";
@@ -39,8 +46,8 @@ combo_##name {                        \
             compatible = "zmk,behavior-hold-tap";
             label = "holdtap";
             #binding-cells = <2>;
-            tapping_term_ms = <100>;
-            flavor = "balanced";
+            tapping_term_ms = <180>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
@@ -177,9 +184,9 @@ KOMBO(semicolono, &kp SEMI, 46 47)
 
 &kp LS(F1)   &kp LS(F2) &kp LS(F3)   &kp LS(F4)   &kp LS(F5)    &kp LS(F6)            &kp LS(F7) &kp LS(F8)    &kp LS(F9)   &kp LS(F10)   &kp LS(F11) &kp LS(F12)
 
-AS(TAB)   AS(Q)  AS(W)    AS(E)    AS(R)     AS(T)                       				      AS(Y)  AS(U)     AS(I)    AS(O)     AS(P)   &kp LG(TAB)
+AS(TAB)   &kp Q  AS(W)    AS(E)    AS(R)     AS(T)                       				      AS(Y)  AS(U)     AS(I)    AS(O)     AS(P)   &kp LG(TAB)
 
-&ht LCTRL ESC   AS(A)  AS(S)    AS(D)    AS(F)     AS(G)                       	      AS(H)  AS(J)     AS(K)    AS(L)     &kp BSPC    AS(SQT)
+&ht MEH ESC   AS(A)  AS(S)    AS(D)    AS(F)     AS(G)                       	      AS(H)  AS(J)     AS(K)    AS(L)     &kp BSPC    AS(SQT)
 
 &ht LSHFT GRAVE AS(Z)  AS(X)    AS(C)    AS(V)     AS(B)     &kp C_MUTE   &td0        AS(N)  AS(M)     AS(COMMA) AS(DOT)  AS(FSLH) &kp RSHFT
 
