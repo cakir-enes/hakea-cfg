@@ -25,13 +25,6 @@ combo_##name {                        \
 
     behaviors {
 
-      meh: meh {
-			compatible = "zmk,modified-key-press";
-			label = "MEH";
-			#binding-cells = <1>;
-			modifiers = MOD_LGUI | MOD_LSFT | MOD_LCTL;
-		}; 
-
         as: auto_shift {
                     compatible = "zmk,behavior-hold-tap";
                     label = "AUTO_SHIFT";
