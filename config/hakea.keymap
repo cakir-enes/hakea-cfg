@@ -179,11 +179,11 @@ KOMBO(semicolono, &kp SEMI, 46 47)
 
 AS(TAB)   &kp Q  AS(W)    AS(E)    AS(R)     AS(T)                       				      AS(Y)  AS(U)     AS(I)    AS(O)     AS(P)   &kp LG(TAB)
 
-&ht LA(LG(LSHIFT)) ESC   AS(A)  AS(S)    AS(D)    AS(F)     AS(G)                       	      AS(H)  AS(J)     AS(K)    AS(L)     &kp BSPC    AS(SQT)
+&ht LC(LA(LSHIFT)) ESC   AS(A)  AS(S)    AS(D)    AS(F)     AS(G)                       	      AS(H)  AS(J)     AS(K)    AS(L)     &kp BSPC    AS(SQT)
 
 &ht LSHFT GRAVE AS(Z)  AS(X)    AS(C)    AS(V)     AS(B)     &kp C_MUTE   &td0        AS(N)  AS(M)     AS(COMMA) AS(DOT)  AS(FSLH) &kp RSHFT
 
-                 &caps_word &kp LALT &kp LGUI &lt 1 SPACE  &mt LCTRL SPACE       &lt 2 RET    &lt 1 RET   &kp RCTRL &kp RALT  &kp RGUI
+                 &caps_word &kp LALT &kp LC(LA(LSHIFT)) &ht LSHIFT SPACE  &ht LSHIFT SPACE       &lt 2 RET    &lt 1 RET   &kp RCTRL &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
