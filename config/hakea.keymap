@@ -110,21 +110,21 @@ KOMBO(enter, &kp ENTER, 26 27)
 
 KOMBO(lpar, &kp LPAR, 31 32)
 
-KOMBO(rpar, &kp RPAR, 31 45)
+KOMBO(rpar, &kp RPAR, 19 31 )
 
 KOMBO(lbkt, &kp LBKT, 32 33)
 
-KOMBO(rbkt, &kp RBKT, 32 46)
+KOMBO(rbkt, &kp RBKT, 32 20)
 
 KOMBO(lbrc, &kp LBRC, 31 33)
 
-KOMBO(rbrc, &kp RBRC, 45 47)
+KOMBO(rbrc, &kp RBRC, 19 21)
 
 KOMBO(colon, &kp COLON, 45 32)
 
 KOMBO(equal, &kp EQUAL, 31 20)
 
-KOMBO(star, &kp STAR, 19 31)
+KOMBO(star, &kp STAR, 19 45)
 
 KOMBO(underscore, &kp UNDERSCORE, 19 20)
 
@@ -158,8 +158,11 @@ KOMBO(tilde, &kp TILDE, 28 15)
 
 KOMBO(percento, &kp PERCENT, 45 46)
 
-KOMBO(semicolono, &kp SEMI, 46 47)
+KOMBO(singlequote, &kp SQT, 46 47)
 
+KOMBO(double_quote, &kp DQT, 45 47)
+
+KOMBO(semicol, &kp SEMI, 44 45)
     };
 
     keymap {
@@ -183,7 +186,7 @@ AS(TAB)   &kp Q  &kp W    &kp E    &kp R     &kp T                       				   
 
 &ht LSHFT GRAVE &kp Z  &kp X    &kp C    &kp V     &kp B     &kp C_MUTE                                  &td0   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 
-                 &caps_word &kp LALT &kp LC(LA(LSHIFT)) &ht LC(LA(LSHIFT)) SPACE  &ht LSHIFT SPACE       &lt 1 TAB    &ht LSHIFT SPACE   &kp RCTRL &kp RALT  &kp RGUI
+                 &caps_word &kp LALT &mo 1  &ht LC(LA(LSHIFT)) BSPC  &ht LSHIFT SPACE       &lt 1 TAB    &ht LSHIFT SPACE   &mo 1 &kp RALT  &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
