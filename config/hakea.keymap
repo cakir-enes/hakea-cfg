@@ -179,7 +179,7 @@ KOMBO(semicolono, &kp SEMI, 46 47)
 
 AS(TAB)   &kp Q  &kp W    &kp E    &kp R     &kp T                       				                         &kp Y  &kp U     &kp I    &kp O     &kp P   &kp TAB
 
-&kp ESC   &ht LGUI A  &ht LCTRL S    &ht LALT D    &ht LSHIFT F     &kp G                                &kp H  &ht RSHIFT J     &ht RALT K    &ht LCTRL L     &ht RGUI BSPC    @kp ESC
+&kp ESC   &ht LGUI A  &ht LCTRL S    &ht LALT D    &ht LSHIFT F     &kp G                                &kp H  &ht RSHIFT J     &ht RALT K    &ht LCTRL L     &ht RGUI BSPC    &kp ESC
 
 &ht LSHFT GRAVE &kp Z  &kp X    &kp C    &kp V     &kp B     &kp C_MUTE                                  &td0   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 
