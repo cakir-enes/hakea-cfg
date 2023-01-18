@@ -30,6 +30,13 @@
   		full-ohms = <(2000000 + 806000)>;
   	};
 
+    	ext-power {
+		compatible = "zmk,ext-power-generic";
+		label = "EXT_POWER";
+		control-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
+	};
+
+
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder>;
