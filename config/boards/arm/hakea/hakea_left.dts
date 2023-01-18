@@ -20,6 +20,14 @@
         , <&gpio0 10  GPIO_ACTIVE_HIGH>
         ;
         };
+
+     ext-power {
+		compatible = "zmk,ext-power-generic";
+		label = "EXT_POWER";
+		control-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
+	};
+
+
 };
 
 &gpio0 {
@@ -42,7 +50,7 @@
     status = "okay";
 };
 
-
+ 
 
 &flash0 {
     /*
