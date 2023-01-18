@@ -22,6 +22,11 @@
         resolution = <2>;
     };
 
+ext-power {
+		compatible = "zmk,ext-power-generic";
+		label = "EXT_POWER";
+		control-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
+	};
 
 
     kscan0: kscan {
@@ -56,12 +61,7 @@
             status = "okay";
         };
 
-  	 ext-power {
-		compatible = "zmk,ext-power-generic";
-		label = "EXT_POWER";
-		control-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
-	};
-
+  	 
 
 
         &flash0 {
