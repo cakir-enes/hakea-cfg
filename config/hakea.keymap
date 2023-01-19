@@ -186,7 +186,7 @@ AS(TAB)   &kp Q  &kp W    &kp E    &kp R     &kp T                       				   
 
 &ht LSHFT GRAVE &kp Z  &kp X    &kp C    &kp V     &kp B     &kp C_MUTE                                  &td0   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 
-                 &caps_word &kp LALT &mo 1  &ht LC(LA(LSHIFT)) BSPC  &ht LSHIFT SPACE       &lt 1 TAB    &ht LSHIFT SPACE   &mo 1 &kp RALT  &mo 2
+                 &caps_word &kp LALT &kp SPACE  &ht LC(LA(LSHIFT)) BSPC  &ht LC(LA(LSHIFT)) BSPC       &ht LSHIFT SPACE    &lt 1 TAB   &mo 1 &kp RALT  &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
