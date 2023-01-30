@@ -181,7 +181,7 @@ KOMBO(semicol, &kp SEMI, 44 45)
 &kp ESC         &kp LS(F2)  &kp LS(F3)     &kp LS(F4)    &kp LS(F5)       &kp LS(F6)                                                                 &kp LS(F7)      &kp LG(TAB)     &kp LS(F9)    &kp LS(F10)   &ext_power EP_ON &ext_power EP_OFF
 AS(TAB)         &kp Q       &kp W          &kp E         &kp R            &kp T                       				                                       &kp Y           &kp U           &kp I         &kp O     &kp P   &kp TAB
 &kp LALT        &ht LGUI A  &ht LCTRL S    &ht LALT D    &ht LSHIFT F     &kp G                                                                      &kp H           &ht RSHIFT J    &ht RALT K    &ht LCTRL L     &ht RGUI BSPC    &kp ESC
-&ht LSHFT GRAVE &kp Z       &kp X          &kp C         &kp V            &kp B                    &kp C_MUTE                      &td0              &kp N           &kp M           &kp COMMA     &kp DOT  &kp FSLH &kp RSHFT
+&ht LSHFT GRAVE &kp Z       &kp X          &kp C         &kp V            &kp B                    &kp C_MUTE                      &td0              &kp N           &kp M           &kp COMMA     &kp DOT  &kp FSLH &tog 3
                             &caps_word     &kp LALT      &kp SPACE        &ht LC(LA(LSHIFT)) BSPC  &ht LC(LA(LSHIFT)) BSPC         &ht LSHIFT SPACE  &lt 1 TAB       &mo 1           &kp RALT      &mo 2
             >;
 
@@ -229,22 +229,16 @@ AS(TAB)         &kp Q       &kp W          &kp E         &kp R            &kp T 
 
         gaming_layer {
                   label = "gmn";
-        // ------------------------------------------------------------------------------------------------------------
-        // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-        // |     | INS  | PSCR | GUI   |       |      |                | PGUP | NW   |   ^   |  PW  |       |       |
-        // |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-        // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-        //              |      |       |       |      |      |  |      |      |      |       |      |
                     bindings = <
-        &kp ESC      &kp N1     &kp N2  &kp N3    &kp N4      &kp N5                         &kp N6   &kp N7     &kp N8    &kp N9    &kp N0   &kp N0
+        &kp ESC      &kp N1     &kp N2   &kp N3   &kp N4      &kp N5                         &kp N6   &kp N7     &kp N8    &kp N9    &kp N0   &kp N0
         &kp TAB      &kp A      &kp W    &kp E    &kp R       &kp T                          &kp Y    &kp F7     &kp F8    &kp F9    &kp N0   &trans
-        &kp LCONTROL &kp Q      &kp S    &kp D    &kp F       &kp G                          &kp H    &kp F4     &kp F5    &kp F6    &kp SEMI &trans
-        &kp LSHIFT   &kp Z      &kp X    &kp C    &kp V       &kp B        &tog 3     &trans &kp N    &kp F1     &kp F2    &kp F3    &kp AT   &trans
+        &kp LCTRL    &kp Q      &kp S    &kp D    &kp F       &kp G                          &kp H    &kp F4     &kp F5    &kp F6    &kp SEMI &trans
+        &kp LSHIFT   &kp Z      &kp X    &kp C    &kp V       &kp B        &trans     &trans &kp N    &kp F1     &kp F2    &kp F3    &kp AT   &tog 3
                                 &kp LALT &kp Q    &kp LSHIFT  &kp SPACE    &to  0     &trans &trans   &trans     &trans    &trans    
                     >;
 
                     sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-                };
+        };
 
     };
 };
