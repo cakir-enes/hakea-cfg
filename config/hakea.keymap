@@ -79,7 +79,7 @@ ZMK_COMBO(wbspc, &kp LA(BSPC),  RM2 RM3, ALL)
 
             bindings = <
 &out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                     &trans        &trans    &trans         &trans   &trans  &bt BT_CLR
-&kp LC(LALT)      &kp LEFT  &bt BT_SEL 1   &kp K_CMENU         &to 0          &wtf                  &kp PG_UP  &kp LA(LEFT)    &kp UP  &kp LA(RIGHT)   &kp N0      &trans
+&kp LC(LALT)      &kp LEFT  &bt BT_SEL 1   &kp K_CMENU         &to 0        &kp P                  &kp PG_UP  &kp LA(LEFT)    &kp UP  &kp LA(RIGHT)   &kp N0      &trans
 &kp LC(LALT)     &kp RIGHT     &kp LCTRL     &kp LSHFT         &to 3        &trans                  &kp PG_DN      &kp LEFT  &kp DOWN      &kp RIGHT  &kp DEL    &kp BSPC
 &out OUT_TOG    &kp K_UNDO     &kp K_CUT    &kp K_COPY   &kp K_PASTE        &trans  &trans  &trans     &trans        &trans    &trans         &trans   &trans      &trans
                     &trans        &trans        &trans        &trans        &trans  &trans             &trans        &trans    &trans         &trans
